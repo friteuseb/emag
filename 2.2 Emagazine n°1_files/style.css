@@ -1,0 +1,908 @@
+html{height:100%;}
+body {
+	font-size: 14px;
+	line-height: 18px;
+	background: #FFF;
+	color: #1A1A1A;
+	font-family: 'allerregular',Arial,Helvetica,sans-serif;
+	position:relative;
+	height:100%;
+	margin:0;
+	cursor: -moz-grab;
+}
+h1, h2, h3 {
+	font-family: 'allerbold';   
+	font-weight: normal;
+}
+
+/* ---------------------------------------------------------------------------------
+------------------------------   FONT FACE   ----------------------------------
+------------------------------------------------------------------------------------*/
+@font-face {
+	font-family: 'allerbold';
+	src: url('../Fonts/aller/aller_bd-webfont.eot');
+	src: url('../Fonts/aller/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../Fonts/aller/aller_bd-webfont.woff') format('woff'),
+		 url('../Fonts/aller/aller_bd-webfont.ttf') format('truetype'),
+		 url('../Fonts/aller/aller_bd-webfont.svg#allerbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'alleritalic';
+	src: url('../Fonts/aller/aller_it-webfont.eot');
+	src: url('../Fonts/aller/aller_it-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../Fonts/aller/aller_it-webfont.woff') format('woff'),
+		 url('../Fonts/aller/aller_it-webfont.ttf') format('truetype'),
+		 url('../Fonts/aller/aller_it-webfont.svg#alleritalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'allerregular';
+	src: url('../Fonts/aller/aller_rg-webfont.eot');
+	src: url('../Fonts/aller/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../Fonts/aller/aller_rg-webfont.woff') format('woff'),
+		 url('../Fonts/aller/aller_rg-webfont.ttf') format('truetype'),
+		 url('../Fonts/aller/aller_rg-webfont.svg#allerregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/*********** STRUCTURE ************/
+small:before {
+	content: "- ";
+	padding: 0 5px;
+}
+small {
+	color: #999999;
+	display: block;
+	line-height: 1.42857;
+	margin: 0 0 10px;
+}
+cite {
+	display: inline-block;
+}
+.img-responsive {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+.link {
+	text-decoration: underline;
+}
+
+/*********** #END STRUCTURE ************/
+
+/*********** Header ************/
+/*.navbar {
+	height: 40px;
+	min-height: 40px;
+	margin: 0;
+}*/
+.swiper-nav {
+	background: #000;
+}
+.navbar .container {
+	margin-left: 115px;
+	width: 640px;
+}
+h1.navbar-header {
+	float: left;
+	font-family: 'allerregular',Arial,Helvetica,sans-serif;
+	margin: 0;
+}
+.navbar-default {
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	float: left;
+}
+.navbar-brand {
+	float: left;
+	font-size: 18px;
+	line-height: 20px;
+	padding: 10px 15px;
+}
+.navbar-default .navbar-brand {
+	color: #FFF;
+	font-weight: normal;
+}
+.swiper-nav.swiper-free-mode > .swiper-wrapper {
+	margin: 0 120px;
+}
+.navbar-default .navbar-brand span {
+	font-family: 'allerbold';
+}
+
+.navbar-brand, .navbar-nav > li > a {
+	text-shadow: none;
+	color: #FFF;
+}
+.nav > li > a {
+	padding: 12px 15px 8px;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #FFF;
+	border-left: 1px solid #FFFFFF;
+	font-size:14px;
+	line-height: 20px;
+}
+.navbar-default .navbar-nav > li > a.nav-last-child {
+	border-right: 1px solid #FFFFFF;
+}
+.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#FFF;background-color:transparent}
+.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus{color:#FFF;background-color:transparent}
+
+/*********** Barre de Navigation ***********/
+#nav {
+	margin: 0;
+	padding: 0;
+}
+#nav li {
+	list-style: none;
+}
+#nav li a {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 15px;
+	padding: 3px 0 3px 10px;
+	color: #1A1A1A;
+}
+#nav li a.btn-close {
+	display: inline-block;
+}
+#nav li.title {
+	line-height: 2;
+}
+#nav li.title span {
+	font-size: 18px;
+}
+#nav li a:hover {
+	text-decoration:none;
+}
+#nav .btn-close {
+	background: url("../Images/menu-close.png") no-repeat scroll left center;
+	height: 30px;
+	padding: 0;
+	width: 40px;
+}
+#pageslide {
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 3px 0 #CCCCCC inset;
+	color: #1A1A1A;
+	overflow: auto;
+	padding: 10px 20px 20px;
+}
+#pageslide #nav li {
+	border-bottom: medium none;
+	padding: 0;
+}
+#pageslide #nav li a {
+	border: medium none;
+	color: #1A1A1A;
+}
+
+/*********** #END Barre de Navigation ***********/
+
+/* Mobile and iPad Portrait */
+@media only screen and (max-width: 959px) {
+	.swiper-nav.swiper-free-mode > .swiper-wrapper {
+		margin: 0 30px;
+	}
+	.navbar .container {
+	margin-left: 80px;
+	width: 640px;
+	}
+	body .title-left,
+	body .title-right {
+		left: 50px;
+		position: absolute;
+		/*top: 560px;*/
+		top: 400px;
+	}
+	body .highlighting-view {
+		left: 50px;
+        position: absolute;
+        top: 560px;
+	}
+}
+/*iPad in landscape*/
+@media only screen and (max-width : 1024px) and (orientation : landscape) { 
+	.swiper-nav.swiper-free-mode > .swiper-wrapper {
+		margin: 0 50px;
+	}
+/*    .container {
+		width: 645px;
+	}*/
+}
+
+/* Mobile Portrait */
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+/*    .swiper-nav {
+		background: blue;
+	}*/
+	body .navbar .container {
+		width: 275px;
+		margin-left: 5px;
+	}
+	.swiper-nav.swiper-free-mode > .swiper-wrapper {
+		margin: 0 20px;
+	}
+	body .container {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 330px;
+	}
+	body .logo-home {
+		left: 0px;
+		top: 0px;
+	}
+	body .logo-home img {
+		max-width: 110px;
+		height: auto;
+	}
+	body .title-home {
+		left: 0px;
+		position: absolute;
+		/*top: 70px;*/
+		top: 230px;
+	}
+		body .title-home .title h1 {
+		font-size: 36px;
+		line-height: 40px;
+		text-shadow: 3px 2px 3px #121110;
+		width: 80%;
+	}
+	/* Content PAGE INTRO */
+	body .title-home-ct h1 {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 10px;
+		text-shadow: none;
+	}
+	body .title-home-ct {
+		top: 5px;
+		width: 300px;
+		height: 248px;
+	}
+	body .title-home-bg {
+		width: 247px;
+		padding: 5px;
+	}
+	body .title-home-ct p {
+		font-size: 13px;
+		line-height: 20px;
+		margin: 0;
+	}
+	body .title-home-ct a.title-home-next {
+		top: 23%;
+	}
+	body .highlighting-view {
+		left: 0px;
+		position: absolute;
+		top: 70px;
+	}
+	body .highlighting-view .title h1 {
+		font-size: 36px;
+        line-height: 40px;
+        text-shadow: 3px 2px 3px #121110;
+        width: 80%;
+	}
+}
+
+/* Mobile Landscape and Portrait */
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+/*    .swiper-nav {
+		background: red;
+	}*/
+	body .navbar .container {
+		width: 350px;
+		margin-left: 20px;
+	}
+	.swiper-nav.swiper-free-mode > .swiper-wrapper {
+		margin: 0 40px;
+	}
+	body .container {
+		width: 500px;
+	}
+	body .logo-home {
+		left: 0px;
+		top: 0px;
+	}
+	body .title-home {
+		left: 0px;
+		position: absolute;
+		top: 470px;
+	}
+	body .title-home .title h1 {
+		font-size: 36px;
+		line-height: 40px;
+		text-shadow: 3px 2px 3px #121110;
+	}
+	.title-home.title-white h1,
+	.title-home.title-black h1 {
+		width: 56%;
+	}
+	/* Content PAGE INTRO */
+	body .title-home-ct h1 {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 10px;
+		text-shadow: none;
+	}
+	body .title-home-ct {
+		top: 5px;
+		width: 403px;
+		height: 170px;
+	}
+	body .title-home-bg {
+		width: 350px;
+		padding: 5px;
+	}
+	body .title-home-ct p {
+		font-size: 13px;
+		line-height: 20px;
+		margin: 0;
+	}
+	body .title-home-ct a.title-home-next {
+		top: 21%;
+	}
+	body .highlighting-view {
+		left: 0px;
+        position: absolute;
+        top: 5px;
+	}
+	body .highlighting-view .title h1 {
+		font-size: 36px;
+        line-height: 40px;
+        text-shadow: 3px 2px 3px #121110;
+	}
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) and (orientation : landscape) {
+	body .logo-home {
+		left: 0px;
+		top: 0px;
+	}
+	body .logo-home img {
+		max-width: 110px;
+		height: auto;
+	}
+	body .title-home {
+		left: 190px;
+		position: absolute;
+		top: 110px;
+	}
+}
+
+
+/* Mobile Landscape and Portrait */
+@media only screen and (min-width : 480px) and (max-width : 568px) {
+	body .iphone-open {
+		display: block!important;
+		position: absolute;
+		right: 10px;
+		top: 35px;
+		z-index: 999;
+	}
+	body #content .open {
+		display: none!important;
+	}
+}
+.iphone-open {
+	display: none!important;
+}
+
+
+
+/*********** #END Header ************/
+
+/*********** Content NAVIGATION PAGE ************/
+.page-nav {
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	z-index: 99999;
+}
+.page-nav a {
+	float: left;
+	display: block;
+	height: 40px;
+	width: 40px;
+	margin-right: 5px;
+	outline: 0;
+}
+.page-nav-img {
+	background: url(../Images/page-nav.png) no-repeat 0 0;
+}
+.page-nav a span {
+	text-indent: -99999px;
+	display: block;
+}
+.previous {
+	background-position: 0 0;
+}
+.next {
+	background-position: -49px 0;
+}
+.top {
+	background-position: -96px 0;
+}
+.bottom {
+	background-position: -144px 0;
+}
+.socials_links {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 60px;
+	transform: translate3d(100px, 0px, 0px);
+	transition: transform 500ms ease 0s;
+	width: 60px;
+}
+.show-socials .socials_links {
+	transform: translate3d(0px, 0px, 0px);
+}
+.socials_links a {
+	display: block;
+	float: none;
+	height: 40px;
+}
+@media only screen and (max-width:480px) { 
+/* Vos règles CSS pour les mobiles ici */
+	.navbar-brand {
+		float: left;
+		font-size: 16px;
+		line-height: 20px;
+		padding: 10px 15px;
+	}
+}
+
+#content #nav {
+	display: none;
+}
+/*********** #END NAVIGATION PAGE ************/
+
+/*********** Content HOME************/
+.swiper-container {
+	position: relative; 
+}
+.logo-home {
+	left: 50px;
+	position: absolute;
+	top: 30px;
+}
+.title-left {
+	left: 50px;
+	position: absolute;
+	top: 380px;
+}
+.highlighting-view {
+	left: 50px;
+	position: absolute;
+	top: 270px;
+}
+.title-right {
+	right: -50px;
+	position: absolute;
+	top: 380px;
+}
+.title-home span, .highlighting-view span {
+	background-color: #39699E;
+	padding: 5px 20px;
+	font-size: 24px;
+	color: #FFF;
+}
+.title-home .title h1, .highlighting-view .title h1 {
+	color: #FFFFFF;
+	font-family: 'allerbold';
+	font-size: 66px;
+	line-height: 68px;
+	text-shadow: 4px 3px 6px #121110;
+}
+.title-home.title-white .title {
+	background-color: #FFF;
+	opacity: 0.8;
+	display: table;
+	margin-top: 8px;
+}
+.title-home.title-white .title h1 {
+	color: #000;
+	padding: 0 10px 15px;
+	margin: 8px 0 0;
+	display: inline;
+}
+.title-home.title-black .title {
+	background-color: #000;
+	opacity: 0.8;
+	display: table;
+	margin-top: 8px;
+}
+.title-home.title-black .title h1 {
+	color: #FFF;
+	padding: 0 10px 15px;
+	margin: 8px 0 0;
+	display: inline;
+}
+.highlighting-view a span {
+    background-color: #000;
+    background-image: url('../Images/reading.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+}
+.highlighting-view a:hover {
+	text-decoration: none;
+}
+
+@media only screen and (max-width:480px) { 
+/* Vos règles CSS pour les mobiles ici */
+	/*.title-home {
+		left: 20px;
+		top: 180px;
+	}*/
+	.title-home span, .highlighting-view .title h1 {
+		font-size: 16px;
+	}
+	.title-home .title h1, .highlighting-view .title h1 {
+		font-size: 36px;
+		line-height: 40px;
+		margin: 10px 0;
+		text-shadow: 2px 3px 4px #121110;
+	}
+}
+
+/*********** #END Content HOME ************/
+
+/*********** Content PAGE INTRO ************/
+.title-home-ct {
+	height: 250px;
+	position: relative;
+	top: 8px;
+	width: 533px;
+	overflow: hidden;
+}
+.title-home-bg {
+	background-color: #E2E1E1;
+	padding: 10px 15px;
+	opacity: 0.8;
+	width: 480px;
+}
+.title-home-ct h1 {
+	color: #1A1A1A;
+	font-size: 32px;
+	line-height: 34px;
+	font-family: 'allerbold';
+	text-shadow: none;
+	margin: 0 0 20px;
+}
+.title-home-ct p {
+	font-size: 18px;
+	line-height: 22px;
+}
+.title-home-ct a.title-home-next {
+	background: url('../Images/btn-next.png') no-repeat right center transparent;
+	display: block;
+	width: 53px;
+	height: 118px;
+	position: absolute;
+	right: 0;
+	top: 31%;
+	
+}
+.title-home-ct a.title-home-next span{
+	text-indent:-999999px;
+	background: none;
+	display: block;
+	padding: 0; 
+}
+
+
+@media only screen and (max-width:480px) { 
+/* Vos règles CSS pour les mobiles ici */
+	.title-home-ct {
+		top: 5px;
+		width: 300px;
+	}
+	.title-home-bg {
+		width: 247px;
+	}
+	.title-home-ct h1 {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+	.title-home-ct p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+/*********** #END Content PAGE INTRO ************/
+
+/*********** Content PAGE BLOCS 2 ************/
+.page-header {
+	border-bottom: none;
+	margin: 0;
+	padding-bottom: 0;
+	position: relative;
+}
+.page-header h1 {
+	color: #EB7205;
+	font-family: 'allerregular';
+	/*font-size: 82px;
+	line-height: 98px;
+	margin: 35px 0 25px;*/
+	font-size: 60px;
+	line-height: 70px;
+	margin: 0px 0 25px;
+}
+.page-header span {
+	color: #000000;
+	font-family: 'allerregular';
+	font-size: 120px;
+	line-height: 120px;
+	margin: 0;
+	position: absolute;
+	left: -5px;
+	top: -10px;
+	opacity: 0.10;
+	filter: alpha(opacity=10);
+}
+.col-md-6 h2,
+.col-md-4 h2,
+.col-md-3 h2 {
+	color: #EB7205;
+	font-family: 'allerbold';
+	font-size: 22px;
+	margin-top: 0;
+}
+.col-md-6 h3,
+.col-md-4 h3,
+.col-md-3 h3 {
+	color: #EB7205;
+	font-family: 'allerbold';
+	font-size: 18px;
+	line-height: 22px;
+}
+.video {
+	margin: 20px 0;
+}
+.video .btn-video {
+	background-color: #2E9ACF;
+	font-family: 'alleritalic';
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	padding: 15px;
+	margin-right: 10px;
+	float: left;
+	color: #FFF;
+}
+.video h3.title-video {
+	background-color: #B7B7B7;
+	color: #1A1A1A;
+	display: block;
+	float: none;
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0;
+}
+.video h3.title-video a {
+	color: #1A1A1A;
+	display: block;
+	float: none;
+	margin: 0;
+	padding: 13px 15px 17px;
+}
+.video h3.title-video a:hover {
+	text-decoration: none;
+}
+.video h3.title-video a span {
+	background: url(../Images/reading.png) no-repeat center center #000000;
+	float: right;
+	height: 48px;
+	position: relative;
+	right: -15px;
+	top: -13px;
+	width: 55px;
+}
+.container .jumbotron {
+	background-color: #D9DADB;
+	border: medium none;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 20px;
+	min-height: 20px;
+	padding: 17px 20px 10px;
+}
+.container .jumbotron h3 {
+	margin-top: 0;
+	color: #1A1A1A;
+}
+.container .jumbotron p {
+	font-size: 14px;
+	line-height: 18px;
+}
+.lead {
+	font-family: 'allerbold';
+	font-size: 36px;
+	line-height: 40px;
+}
+.intro {
+	font-family: 'allerregular';
+	font-size: 18px;
+	line-height: 22px;
+}
+
+
+@media only screen and (max-width:480px) { 
+/* Vos règles CSS pour les mobiles ici */
+	.page-header h1 {
+		font-size: 30px;
+		line-height: 34px;
+		margin: 0 0 20px;
+	}
+
+	.page-header span {
+		font-size: 46px;
+		line-height: 46px;
+		left: -3px;
+		top: -3px;
+	}   
+	.col-md-6 h2,
+	.col-md-4 h2,
+	.col-md-3 h2 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.col-md-6 h3,
+	.col-md-4 h3,
+	.col-md-3 h3 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.lead {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	.intro {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.video .btn-video {
+		font-size: 14px;
+		padding: 10px;
+		margin-right: 5px;
+	}
+	.video h3.title-video {
+		font-size: 14px;
+	}
+	.video h3.title-video a {
+		padding: 8px 10px 12px;
+	}
+	.video h3.title-video a span {
+		background: url("../Images/reading@2x.png") no-repeat scroll center center #000000;
+		height: 38px;
+		right: -10px;
+		top: -8px;
+		width: 35px;
+	}
+	.container .jumbotron h3 {
+		font-size: 16px;
+		margin-top: 0;
+	}
+}
+
+/*********** #END Content PAGE BLOCS 2 ************/
+
+/*********** Content PAGE BLOCS 4 ************/
+.thumbnail .caption {
+	color: #1A1A1A;
+}
+/*.row .col-md-3:nth-child(2n+2) .thumbnail { 
+	background-color: #E2E1E1;
+}*/
+.article-list .col-md-3 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.thumbnail, .img-thumbnail {
+	box-shadow: none;
+}
+.thumbnail {
+	background-color: #FFFFFF;
+	border: none;
+	border-radius: 0;
+	display: block;
+	height: auto;
+	line-height: 18px;
+	margin-bottom: 20px;
+	max-width: 100%;
+	padding: 0;
+	transition: none;
+}
+.thumbnail .caption h2 {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0 0 20px;
+}
+.thumbnail .caption > img {
+	display: block;
+	height: auto;
+	margin: 5px auto 10px;
+	/*max-width: 100%;*/
+	width: 100%;
+}
+.panel {
+	background-color: #EB7205;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: #FFFFFF;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+.panel-heading {
+	border-bottom: medium none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	padding: 5px 10px;
+}
+.panel-title {
+	font-size: 12px;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-family: 'allerregular';
+}
+.panel-title {
+	color: #FFFFFF !important;
+}
+.thumbnail a {
+	color: #1A1A1A;
+}
+.more {
+	background: url(../Images/more.png) no-repeat 0 0;
+	padding-left: 25px;
+}
+
+@media only screen and (max-width:480px) { 
+/* Vos règles CSS pour les mobiles ici */
+	.thumbnail .caption h2 {
+		font-size: 22px;
+		line-height: 26px;
+		margin: 0 0 15px;
+	}
+}
+
+
+/*********** #END Content PAGE BLOCS 4 ************/
+
+/* Romain CANON */
+img.lazy {
+	display: block;
+	margin: 10px auto;
+}
+
+
+
+
+
+/* Logo CG22 */
+.navbar-default .logo-cg {
+	float: left;
+	margin-top: 2px;
+	margin-right: 10px;
+}
+
+.navbar-default .container {
+	width: 700px;
+}

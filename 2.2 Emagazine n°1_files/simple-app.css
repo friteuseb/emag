@@ -1,0 +1,66 @@
+body, html {
+	position: relative;
+	height: 100%;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.5;
+}
+.swiper-nav {
+	height: 40px;
+	width: 100%;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));
+	background-image: -webkit-linear-gradient(top, #333, #111);
+	background-image: -moz-linear-gradient(top, #333, #111);
+	background-image: -o-linear-gradient(top, #333, #111);
+	background-image: linear-gradient(to bottom, #333, #111);
+}
+.swiper-nav .swiper-wrapper {
+	margin: 0 auto;
+}
+/*.swiper-nav span {
+	cursor: pointer;
+	display: block;
+	line-height: 40px;
+	padding: 0 20px;
+	color: #fff;
+	text-align: center;
+	border-right: 1px solid #000;
+	border-left: 1px solid #333;
+}*/
+.swiper-nav .swiper-slide:first-child span {
+	border-left: none;
+}
+.swiper-nav .swiper-slide:last-child span {
+	border-right: none;
+}
+.swiper-pages {
+	height: 100%;
+}
+.scroll-container {
+	height: 100%;
+	width: 100%;
+}
+.scroll-container .swiper-slide {
+	width: 100%;
+}
+.page-inner {
+	padding: 15px 20px;
+}
+.swiper-scrollbar {
+	position: absolute;
+	right: 5px;
+	top: 2%;
+	width: 5px;
+	height: 96%;
+	background: rgba(0,0,0,0.2);
+	z-index: 10;
+}
+.swiper-scrollbar-drag {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: rgba(255,255,255,0.5);
+	border-radius: 10px;
+}
